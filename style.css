@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,800;0,900;1,600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+/* menu */
+.logo {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Mulish", sans-serif;
+}
+.logo-img img {
+  width: 150px;
+}
+.menu-items a {
+  text-decoration: none;
+  font-size: 2.2vw;
+  color: #574c4c;
+}
+.menu-items-1 {
+  color: red;
+}
+.menu-ham {
+  width: 25px;
+}
+
+.hero {
+  background: url("./images/hero.png");
+  height: 40vw;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero small {
+  padding: 20px 0;
+  width: 45%;
+  text-align: center;
+}
+.hero-search {
+  display: flex;
+  gap: 5px;
+  padding: 13px;
+  background-color: #fafafa5c;
+  border-radius: 5px;
+}
+.hero-search select {
+  border: none;
+  border-radius: 5px;
+}
+
+/* banner  */
+.banner {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 20px;
+}
+
+.banner ul {
+  padding: 0 40px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* destination */
+.dest {
+  background-color: #574c4c;
+}
+.dest img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.dest-img-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.dest-img-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.dest-img-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* chooiseUs */
+
+.chooseUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.chooseUs-sub-ele {
+  display: flex;
+}
+
+/* perfect place  */
+.perfect-place {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 20px;
+}
+
+.perfect-place ul {
+  padding: 0 40px;
+}
+
+.perfect-place img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* footer  */
+
+.footer > img {
+  width: 50px;
+}
+
+/* Media uery */
+/* 
+@media screen and (max-width: 600px) {
+  .logo {
+    background: red;
+  }
+}
+@media screen and (max-width: 991px) {
+  .logo {
+    background: rgb(179, 174, 174);
+  }
+  .menu-ham {
+    display: block;
+  }
+} */
