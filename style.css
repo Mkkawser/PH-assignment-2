@@ -14,6 +14,10 @@
   --colorful-text: #424247;
 }
 
+.hide {
+  display: none !important;
+}
+
 /* menu */
 .logo {
   display: flex;
@@ -21,22 +25,26 @@
   align-items: center;
   justify-content: space-between;
   font-family: "Mulish", sans-serif;
-  background: #efefef38
+  background: #efefef38;
 }
 .logo-img img {
-  width: 150px;
+  width: 30vw;
+}
+.menu-items {
+  padding-right: 1vw;
 }
 .menu-items a {
   text-decoration: none;
   font-size: 2vw;
   color: #574c4c;
   font-weight: 100;
+  padding-left: 2vw;
 }
 .menu-items-1 {
   color: red !important;
 }
-.menu-ham {
-  width: 25px;
+.menu-ham img {
+  width: 5vw;
 }
 
 .hero {
@@ -54,25 +62,29 @@
   align-items: center;
   justify-content: center;
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 15px;
+  background-size: contain;
 }
 
 .hero h1 {
   font-weight: bold;
+  font-size: 6vw;
 }
 .hero small {
   padding: 20px 0;
-  width: 45%;
   text-align: center;
   font-weight: normal;
+  font-size: 3vw;
 }
 .hero-search {
   display: flex;
-  gap: 5px;
+  gap:2vw;
   padding: 13px;
   background-color: #fafafa5c;
   border-radius: 5px;
+  flex-direction: column;
+  width: 50%;
 }
 .hero-search-bar {
   background-color: #ff5400;
@@ -80,13 +92,15 @@
   display: flex;
   gap: 4px;
   padding: 8px;
+  font-size: 14px;
 }
 .hero-search-bar img {
-  width: 15px;
+  width:14px;
 }
 .hero-search select {
   border: none;
   border-radius: 5px;
+  font-size: 2vw;
 }
 
 /* banner  */
@@ -126,7 +140,7 @@ ul {
 /* destination */
 #choce-our-destination {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 10px;
   text-align: center;
 }
 .destination-title {
@@ -282,7 +296,8 @@ ul {
   margin: 0 auto;
 }
 #why-choce-us {
-  margin-top: 100px;
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
 .card img {
   width: 60px;
@@ -332,20 +347,44 @@ ul {
 }
 
 /* perfect place  */
-.perfect-place {
+#perfect-place {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.perfect-place-area {
   display: grid;
-  grid-template-columns: 60% 40%;
-  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.popular-tour-text {
+  width: 50%;
+  line-height: 25px;
 }
 
-.perfect-place ul {
-  padding: 0 40px;
+.tour-title {
+  font-size: 21px;
+  color: var(--colorful-text);
+  font-weight: 800;
+  margin-bottom: 24px;
 }
-
-.perfect-place img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.tour-dris {
+  font-size: 1rem;
+  color: var(--colorful-text);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.popular-tour-text ul li {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+.popular {
+  margin-top: 30px;
+  padding: 20px 35px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px;
 }
 
 /* newletter */
@@ -435,7 +474,7 @@ button:hover {
   align-items: center;
   margin-bottom: 15px;
 }
-.top-area img{
+.top-area img {
   width: 130px;
 }
 .footer-area p {
@@ -473,34 +512,143 @@ button:hover {
   background-image: url("./images/bg_2.webp");
   background-position: center;
   height: 60vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+.offer-img img {
+  margin: 54px;
+  border: none;
+  background-color: #e7ebf0;
+  border-radius: 48px;
+  position: relative;
+  box-shadow: -8px 8px 24px rgba(69, 88, 115, 0.32),
+    inset 0 0 8px rgba(133, 146, 166, 0.5);
+  border: 14px solid #e7ebf0;
+  box-sizing: content-box;
+}
+.offer-text {
+  margin: auto;
+  color: rgb(255, 255, 255);
 }
 
 /* deals section  */
-.deals-1 {
+.deals_discount_container {
   background-image: url("./images/deals-1.png");
-  height: 57vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 56px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 24px;
 }
-.deals-card {
-  background-color: #dfd9d994;
-  color: white;
+.book_now_card {
   width: 50%;
-  padding: 16px;
-  border-radius: 21px;
-  box-shadow: 3px 3px #f0f0f0;
+  padding: 50px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+}
+.card_top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card_top p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 0;
+}
+.price {
+  color: var(--btn-color);
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.card_2 {
+  background-image: url("./images/deals-2.png");
+  justify-content: start;
+}
+.book_now_card button {
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  padding: 3px;
+  border-radius: 2px;
 }
 
-/* Media uery */
-/* 
-@media screen and (max-width: 600px) {
+/* Responsive Design */
+/* X-Small devices (portrait phones, less than 576px
+) */
+
+/* Extra Small devices (landscape phones, 320px and up) */
+@media (min-width: 320px) {
   .logo {
-    background: red;
+    background-color: red;
+  }
+  .menu-items {
+    display: none;
+  }
+  .hero {
+    background-size: cover;
+    height: 150vw;
   }
 }
-@media screen and (max-width: 991px) {
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
   .logo {
-    background: rgb(179, 174, 174);
+    background-color: rgb(255, 234, 0);
+  }
+  .hero {
+    background-size: cover;
+    height: 50vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .logo {
+    background-color: rgb(0, 255, 68);
+  }
+  .menu-items {
+    display: flex;
   }
   .menu-ham {
-    display: block;
+    display: none;
   }
-} */
+  .hero h1{
+    font-size: 5vw;
+  }
+  .hero small{
+    width: 80%;
+    font-size: 2vw;
+  }
+  .hero-search{
+    flex-direction: row;
+    width: auto;
+  }
+  .hero-search-bar {
+    font-size: 2vw;
+  }
+  .hero-search-bar img{
+    width: 2vw;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
