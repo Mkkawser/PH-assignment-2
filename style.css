@@ -313,6 +313,7 @@ ul {
   text-align: center;
   width: 80%;
   margin: 0 auto;
+  font-size: 2vw;
 }
 #why-choce-us {
   margin-top: 30px;
@@ -331,9 +332,9 @@ ul {
 }
 .card .choce-dris {
   color: var(--colorful-text);
-  line-height: 20px;
   font-weight: 400;
   margin-bottom: 10px;
+  font-size: 1.8vw;
 }
 .why-choce-us-area {
   display: flex;
@@ -373,7 +374,7 @@ ul {
 }
 
 .perfect-place-area {
- margin: 34px;
+  margin: 34px;
 }
 .popular-tour-text {
   width: 50%;
@@ -484,7 +485,7 @@ button:hover {
   background: rgba(19, 19, 24, 0.05);
   margin-top: 50px;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
 }
 .top-area {
   display: flex;
@@ -530,9 +531,10 @@ button:hover {
 .offer {
   background-image: url("./images/bg_2.webp");
   background-position: center;
-  height: 60vw;
+  height: 40vw;
   overflow: hidden;
   position: relative;
+  background-size: cover;
   display: none;
 }
 .offer-img img {
@@ -552,6 +554,21 @@ button:hover {
 }
 
 /* deals section  */
+.discount_area {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+.secton_title_area{
+  margin: 0 auto;
+  width: 80%;
+}
+.secton_title_area h2{
+  font-size: 4vw;
+}
+.secton_title_area p{
+  font-size: 2vw;
+}
 .deals_discount_container {
   background-image: url("./images/deals-1.png");
   background-repeat: no-repeat;
@@ -566,7 +583,6 @@ button:hover {
   width: 80%;
 }
 .book_now_card {
- 
   padding: 20px;
   border-radius: 16px;
   border: 2px solid #fff;
@@ -609,7 +625,6 @@ button:hover {
 
 /* Extra Small devices (landscape phones, 320px and up) */
 @media (min-width: 320px) {
-
   .menu-items {
     display: none;
   }
@@ -621,7 +636,6 @@ button:hover {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  
   .hero {
     background-size: cover;
     height: 50vw;
@@ -669,19 +683,22 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    align-items: center;
   }
-  .deals_discount_container{
+  .deals_discount_container {
     background-size: cover;
     margin: 0 auto;
   }
-  .book_now_card{
+  .book_now_card {
     width: 40%;
+  }
+  .footer-area{
+    padding: 90px;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  
   .menu-items {
     display: flex;
   }
